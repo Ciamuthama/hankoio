@@ -7,36 +7,28 @@ console.log(hankoApi)
 
 const Login = () => {
     const navigate = useNavigate();
-    const hanko = useMemo(() => new Hanko(hankoApi), []);
+  const hanko = useMemo(() => new Hanko(hankoApi), []);
 
-    React.useEffect(() => {
-        register(hankoApi).catch((error) => {
-            console.log(error);
-        });
-    }, []);
-
-    const generateUserID = () => Math.random().toString(36).substring(2, 10);
-
-//👇🏻 executes after a user logs in
-const redirectAfterLogin = useCallback(() => {
-    localStorage.setItem("loggedIn", "true");
-    if (!localStorage.getItem("u_id")) {
-        localStorage.setItem("u_id", generateUserID());
-    }
+  const redirectAfterLogin = useCallback(() => {
     navigate("/");
-}, [navigate]);
+  }, [navigate]);
 
-//👇🏻 triggered after a successful sign in
-React.useEffect(
+  React.useEffect(
     () =>
-        hanko.onAuthFlowCompleted(() => {
-            redirectAfterLogin();
-        }),
+      hanko.onAuthFlowCompleted(() => {
+        redirectAfterLogin();
+      }),
     [hanko, redirectAfterLogin]
-);
+  );
+
+  React.useEffect(() => {
+    register(hankoApi).catch((error) => {
+      alert(error)
+    });
+  }, []);
 
     return (
-       <div className="flex min-h-screen justify-center items-center ">
+       <div className="flex min-h-screen justify-center items-center bg-neutral-900">
       <hanko-auth />
     </div>
     );
