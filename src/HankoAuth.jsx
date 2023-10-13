@@ -1,8 +1,8 @@
 import React, { useCallback, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { register, Hanko } from "@teamhanko/hanko-elements";
-// eslint-disable-next-line no-undef
-const hankoApi = process.env.MY_API_URL;
+
+const hankoApi = import.meta.env.MY_API_URL;
 console.log(hankoApi)
 
 const Login = () => {
