@@ -6,7 +6,7 @@ const hankoApi = import.meta.env.MY_API_URL;
 console.log(hankoApi)
 
 const Login = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const hanko = useMemo(() => new Hanko(hankoApi), []);
 
   const redirectAfterLogin = useCallback(() => {
@@ -29,7 +29,9 @@ const Login = () => {
 
     return (
        <div className="flex min-h-screen justify-center items-center bg-neutral-900">
-      <hanko-auth />
+      <hanko-auth
+          
+        />
     </div>
     );
 };
