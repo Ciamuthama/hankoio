@@ -2,8 +2,7 @@ import React, { useCallback, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { register, Hanko } from "@teamhanko/hanko-elements";
 
-const hankoApi = import.meta.env.MY_API_URL;
-console.log(hankoApi)
+const hankoApi = import.meta.env.BASE_URL;
 
 const Login = () => {
   const navigate = useNavigate();
@@ -29,9 +28,7 @@ const Login = () => {
 
     return (
        <div className="flex min-h-screen justify-center items-center bg-neutral-900">
-      <hanko-auth
-          
-        />
+      <hanko-auth />
     </div>
     );
 };
