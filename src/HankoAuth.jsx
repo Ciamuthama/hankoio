@@ -19,7 +19,7 @@ const Login = () => {
   }, [navigate]);
 
   useEffect(() => {
-    register(api).catch(setError);
+    register(hankoApi).catch(setError);
   }, []);
 
   useEffect(
