@@ -12,7 +12,7 @@ const hankoApi = import.meta.env.VITE_BASE_URL;
 const Login = () => {
   const navigate = useNavigate();
   const [error, setError] = useState(null);
-  const hankoClient = useMemo(() => new Hanko(api), []);
+  const hankoClient = useMemo(() => new Hanko(hankoApi), []);
 
   const redirectAfterLogin = useCallback(() => {
     navigate("/home", { replace: true });
