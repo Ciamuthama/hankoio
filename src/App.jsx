@@ -19,7 +19,7 @@ function App() {
       <Router>
         
           <Routes>
-          <Route path="/" element={loggedIn ? <Home /> : <Navigate to={'/login'} />} />
+          <Route path="/home" element={loggedIn ? <Home /> : <Navigate to={'/login'} />} />
           <Route path="/login" element={loggedIn ?  <Navigate to={'/login'} /> : <Login/>  }/>
 
           {/* <Route path='/' Component={Home}/> */}
