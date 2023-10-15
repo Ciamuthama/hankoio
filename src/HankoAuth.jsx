@@ -9,7 +9,7 @@ const Login = () => {
   const hanko = useMemo(() => new Hanko(hankoApi), []);
 
   const redirectAfterLogin = useCallback(() => {
-    navigate("/home");
+    navigate("/home", {replace: true});
   }, [navigate]);
 
   React.useEffect(
