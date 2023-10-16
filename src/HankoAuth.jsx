@@ -14,11 +14,17 @@ const Login = () => {
   const [error, setError] = useState(null);
   const hankoClient = useMemo(() => new Hanko(hankoApi), []);
 
-const redirectAfterLogin = useCallback(() => {
-    localStorage.setItem("loggedIn", "true");
-    navigate("/home");
-}, [navigate]);
+  const generateUserID = () => Math.random().toString(36).substring(2, 10);
 
+
+  const redirectAfterLogin = useCallback(() => {
+      localStorage.setItem("loggedIn", "true");
+      if (!localStorage.getItem("u_id")) {
+          localStorage.setItem("u_id", generateUserID());
+      }
+      navigate("/home");
+  }, [navigate]);
+  
   useEffect(() => {
     register(hankoApi).catch(setError);
   }, []);
