@@ -14,9 +14,10 @@ const Login = () => {
   const [error, setError] = useState(null);
   const hankoClient = useMemo(() => new Hanko(hankoApi), []);
 
-  const redirectAfterLogin = useCallback(() => {
-    navigate("/home", { replace: true });
-  }, [navigate]);
+const redirectAfterLogin = useCallback(() => {
+    localStorage.setItem("loggedIn", "true");
+    navigate("/home");
+}, [navigate]);
 
   useEffect(() => {
     register(hankoApi).catch(setError);
