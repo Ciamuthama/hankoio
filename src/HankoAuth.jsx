@@ -1,5 +1,4 @@
 import React, {
-  useCallback,
   useEffect,
   useState,
   useMemo,
@@ -17,7 +16,7 @@ const Login = () => {
   const generateUserID = () => Math.random().toString(36).substring(2, 10);
 
 
-  const redirectAfterLogin = useCallback(() => {
+  const redirectAfterLogin = React.useCallback(() => {
       localStorage.setItem("loggedIn", "true");
       if (!localStorage.getItem("u_id")) {
           localStorage.setItem("u_id", generateUserID());
@@ -36,6 +35,7 @@ const Login = () => {
 
     return (
        <div className="flex min-h-screen justify-center items-center bg-neutral-900">
+        <div>{ error }</div>
       <hanko-auth />
     </div>
     );
