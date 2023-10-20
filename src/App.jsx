@@ -32,7 +32,7 @@ function App() {
       <Router>
           <Routes>
           <Route path="/home" element={<Home />} />
-          <Route path="/login" element={loggedIn ?  <Navigate to={'/home'} /> : <Login/>  }/>
+          <Route path="/login" element={loggedIn ?  <Home/> : <Login/>  }/>
           </Routes>
       </Router>
     </div>}
