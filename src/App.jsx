@@ -3,29 +3,41 @@ import { BrowserRouter as Router, Routes, Route, Navigate, } from "react-router-
 
 import Login from "./HankoAuth";
 import Home from "./home";
+import Loading from "./Loading";
 
 function App() {
   const [loggedIn, setLoggedIn] = React.useState(false);
+  const [loading, setLoading] = React.useState(true)
  
 
   React.useEffect(() => {
     if (localStorage.getItem("loggedIn")) {
       setLoggedIn(true);
+      setLoading(false)
     }
   }, []);
 
+
+  React.useEffect(() => {
+    setTimeout(() => {
+        setLoading(false)
+      },[10000])
+  },[])
+
+
   return (
-    <div className="bg-[url('./assets/bg.jpg')] bg-cover bg-center h-full">
+    <div className='h-screen'>
+  
+   {loading ? <Loading/>: <div className="bg-[url('./assets/bg.jpg')] bg-cover bg-center h-full">
       <Router>
-        
           <Routes>
           <Route path="/home" element={loggedIn ? <Home /> : <Navigate to={'/login'} />} />
           <Route path="/login" element={loggedIn ?  <Navigate to={'/home'} /> : <Login/>  }/>
           <Route path="*" element={<Navigate to={"/home"}/>} />
           {/* <Route path='/' Component={Home}/> */}
           </Routes>
-        
       </Router>
+    </div>}
     </div>
   );
 }

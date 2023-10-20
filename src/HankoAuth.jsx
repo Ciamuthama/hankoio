@@ -34,9 +34,11 @@ const Login = () => {
   );
 
     return (
-       <div className="flex min-h-screen justify-center items-center bg-neutral-900">
-        <div>{ error }</div>
+      <div className=' bg-neutral-400/40'>
+        <div className="flex min-h-screen justify-center items-center mx-2">
+          <div>{ error}</div>
       <hanko-auth />
+      </div>
     </div>
     );
 };
