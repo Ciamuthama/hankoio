@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate, } from "react-router-dom";
 
 import Login from "./HankoAuth";
 import Home from "./home";
@@ -11,9 +11,9 @@ function App() {
  
 
   React.useEffect(() => {
-    if (localStorage.getItem("loggedIn", "true")) {
+    if (localStorage.getItem("loggedIn", "true") && localStorage.getItem("u_id")) {
       setLoggedIn(true);
-      setLoading(false)
+      setLoading(false);
     }
   }, []);
 
@@ -21,7 +21,7 @@ function App() {
   React.useEffect(() => {
     setTimeout(() => {
         setLoading(false)
-      },[15000])
+      },[10000])
   },[])
 
 
@@ -31,8 +31,8 @@ function App() {
    {loading ? <Loading/>: <div className="bg-[url('./assets/bg.jpg')] bg-cover bg-center bg-no-repeat h-full">
       <Router>
           <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/login" element={loggedIn ?  <Home/> : <Login/>  }/>
+          <Route path="/home" element={loggedIn ? <Home /> : <Navigate to={'/login'} />} />
+          <Route path="/login" element={loggedIn ?  <Navigate to={'/home'} /> : <Login/>  }/>
           </Routes>
       </Router>
     </div>}
