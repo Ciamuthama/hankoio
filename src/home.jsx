@@ -45,7 +45,7 @@ if('getBattery' in navigator){
   const currentTime = time.toLocaleDateString('en-US', format)
 
   return (
-    <div className="flex justify-between flex-col max-h-screen" >
+    <div className="flex justify-between flex-col h-screen" >
       <div className="lg:bg-neutral-400/50 md:bg-none max-sm:bg-none flex justify-between items-center flex-row font-sans">
         <div className="md:hidden max-sm:hidden lg:flex flex-row justify-between items-end gap-2 mx-3 py-1">
           <div className="md:hidden max-sm:hidden lg:block bg-[url('./assets/apple.svg')] bg-contain bg-center bg-no-repeat p-2"></div>
@@ -150,7 +150,7 @@ if('getBattery' in navigator){
               <div className="bg-[url('./assets/Word.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Word</p>
               </div>
-              <div className="lg:block md:hidden bg-[url('./assets/Xbox.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
+              <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/xBox.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="bg-[url('./assets/Netflix.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Netflix</p>
               </div>
