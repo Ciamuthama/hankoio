@@ -45,7 +45,7 @@ if('getBattery' in navigator){
   const currentTime = time.toLocaleDateString('en-US', format)
 
   return (
-    <div className="flex justify-between flex-col h-screen" >
+    <div className="flex justify-between flex-col h-full mb-auto" >
       <div className="lg:bg-neutral-400/50 md:bg-none max-sm:bg-none flex justify-between items-center flex-row font-sans">
         <div className="md:hidden max-sm:hidden lg:flex flex-row justify-between items-end gap-2 mx-3 py-1">
           <div className="md:hidden max-sm:hidden lg:block bg-[url('./assets/apple.svg')] bg-contain bg-center bg-no-repeat p-2"></div>
