@@ -14,16 +14,16 @@ const Login = () => {
   const [error, setError] = useState(null);
   const hankoClient = useMemo(() => new Hanko(hankoApi), []);
 
-  const generateUserID = () => Math.random().toString(36).substring(2, 10);
+  // const generateUserID = () => Math.random().toString(36).substring(2, 10);
 
 
   const redirectAfterLogin = React.useCallback(() => {
       localStorage.setItem("loggedIn", "true");
-      if (!localStorage.getItem("u_id")) {
-          localStorage.setItem("u_id", generateUserID());
-          <Navigate to={<Home/>} replace={true} />
-      }
-      // <Navigate to={<Home/>} replace={true} />
+      // if (!localStorage.getItem("u_id")) {
+      //     localStorage.setItem("u_id", generateUserID());
+      //     <Navigate to={<Home/>} replace={true} />
+      // }
+      <Navigate to={<Home/>} replace={true} /> 
   }, []);
   
   useEffect(() => {
