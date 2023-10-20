@@ -5,6 +5,7 @@ import React, {
 } from "react";
 import { Navigate } from "react-router-dom";
 import { Hanko, register } from "@teamhanko/hanko-elements";
+import Home from "./home";
 
 const hankoApi = import.meta.env.VITE_BASE_URL;
 
@@ -20,9 +21,9 @@ const Login = () => {
       localStorage.setItem("loggedIn", "true");
       if (!localStorage.getItem("u_id")) {
           localStorage.setItem("u_id", generateUserID());
+          <Navigate to={<Home/>} replace={true} />
       }
-      Navigate("/home", {replace:true});
-      <Navigate to={"/home"}/>
+      // <Navigate to={<Home/>} replace={true} />
   }, []);
   
   useEffect(() => {
