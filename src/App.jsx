@@ -11,7 +11,7 @@ function App() {
  
 
   React.useEffect(() => {
-    if (localStorage.getItem("loggedIn")) {
+    if (localStorage.getItem("loggedIn", "true")) {
       setLoggedIn(true);
       setLoading(false)
       Navigate('/home')
