@@ -26,7 +26,7 @@ function App() {
 
 
   return (
-    <div className='max-h-screen'>
+    <div className='h-screen'>
   
    {loading ? <Loading/>: <div className="bg-[url('./assets/bg.jpg')] bg-cover bg-center h-full">
       <Router>
