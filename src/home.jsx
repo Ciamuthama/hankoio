@@ -45,7 +45,7 @@ if('getBattery' in navigator){
   const currentTime = time.toLocaleDateString('en-US', format)
 
   return (
-    <div className="flex justify-between flex-col h-screen" >
+    <div className="flex justify-between flex-col max-h-screen" >
       <div className="lg:bg-neutral-400/50 md:bg-none max-sm:bg-none flex justify-between items-center flex-row font-sans">
         <div className="md:hidden max-sm:hidden lg:flex flex-row justify-between items-end gap-2 mx-3 py-1">
           <div className="md:hidden max-sm:hidden lg:block bg-[url('./assets/apple.svg')] bg-contain bg-center bg-no-repeat p-2"></div>
@@ -93,64 +93,67 @@ if('getBattery' in navigator){
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
               </div>
               <div className="bg-[url('./assets/Alva.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Alva</p>
               </div>
               <div className="bg-[url('./assets/Bloody7.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Bloody7</p>
               </div>
               <div className="bg-[url('./assets/blyOS.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">blyOS</p>
               </div>
               <div className="bg-[url('./assets/Calculator.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Calculator</p>
               </div>
               <div className="bg-[url('./assets/Chrome.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Chrome</p>
               </div>
               <div className="bg-[url('./assets/Contacts.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Contacts</p>
               </div>
               <div className="bg-[url('./assets/Discord.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Discord</p>
               </div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/Docker.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="bg-[url('./assets/Earth.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Earth</p>
               </div>
               <div className="bg-[url('./assets/FaceTime.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">FaceTime</p>
               </div>
               <div className="lg:block md:hidden bg-[url('./assets/FanControl.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="bg-[url('./assets/GitHub.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">GitHub</p>
               </div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/Idena.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="bg-[url('./assets/Instagram.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Instagram</p>
               </div>
               <div className="bg-[url('./assets/Keep.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Keep</p>
               </div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/LanScan.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/Node.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="bg-[url('./assets/Phone.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Phone</p>
               </div>
               <div className="bg-[url('./assets/Podcasts.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Podcast</p>
               </div>
               <div className="bg-[url('./assets/Spotify.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Spotify</p>
               </div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/Sublime.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/Steam.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/WebTorrent.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="bg-[url('./assets/Word.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Word</p>
               </div>
               <div className="lg:block md:hidden bg-[url('./assets/Xbox.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
-              <div className="bg-[url('./assets/Youtube.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
-              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
+              <div className="bg-[url('./assets/Netflix.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Netflix</p>
+              </div>
+              <div className="bg-[url('./assets/YouTube.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Youtube</p>
               </div>
             </div>
           </div>
@@ -166,6 +169,7 @@ if('getBattery' in navigator){
         <div className=" bg-[url('./assets/Safari.png')] bg-center bg-contain w-16 h-16"></div>
         <div className=" max-sm:hidden bg-[url('./assets/Calendar.png')] bg-center bg-contain w-16 h-16"></div>
         <div className=" bg-[url('./assets/Music.png')] bg-center bg-contain w-16 h-16"></div>
+        <div className=" bg-[url('./assets/WhatApp.png')] bg-center bg-contain w-16 h-16"></div>
         <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/VScode.png')] bg-center bg-contain w-16 h-16"></div>
         <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/Terminal.png')] bg-center bg-contain w-16 h-16"></div>
         <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/JetBrains.png')] bg-center bg-contain w-16 h-16"></div>
