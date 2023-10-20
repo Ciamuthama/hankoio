@@ -37,8 +37,8 @@ const Login = () => {
 
     return (
       <div className=' bg-neutral-400/40'>
+        <a className="rounded-md p-5 bg-blue-400 text-white font-sans text-sm no-underline">Please visit my Github for instruction on the login process</a>
         <div className="flex min-h-screen justify-center items-center mx-2">
-          <Link to='/home' className="rounded-md p-5 bg-blue-400 text-white font-sans text-sm">Home</Link>
           <hanko-auth />
       </div>
     </div>
