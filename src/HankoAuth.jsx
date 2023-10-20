@@ -37,7 +37,7 @@ const Login = () => {
 
     return (
       <div className=' bg-neutral-400/40'>
-        <a href="https://github.com/Ciamuthama/hankoio" className="rounded-md p-5 bg-blue-400 text-white font-sans text-sm no-underline">Please visit my Github for instruction on the login process</a>
+        <a href="https://github.com/Ciamuthama/hankoio" className="rounded-md p-5 bg-blue-400 text-white font-sans text-sm no-underline flex items-center mt-3">Please visit my Github for instruction on the login process</a>
         <div className="flex min-h-screen justify-center items-center mx-2">
           <hanko-auth />
       </div>
