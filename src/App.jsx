@@ -14,6 +14,7 @@ function App() {
     if (localStorage.getItem("loggedIn")) {
       setLoggedIn(true);
       setLoading(false)
+      Navigate('/home')
     }
   }, []);
 
