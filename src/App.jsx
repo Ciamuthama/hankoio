@@ -28,13 +28,11 @@ function App() {
   return (
     <div className='h-screen'>
   
-   {loading ? <Loading/>: <div className="bg-[url('./assets/bg.jpg')] bg-cover bg-center h-full">
+   {loading ? <Loading/>: <div className="bg-[url('./assets/bg.jpg')] bg-cover bg-center bg-no-repeat h-full">
       <Router>
           <Routes>
           <Route path="/home" element={loggedIn ? <Home /> : <Navigate to={'/login'} />} />
           <Route path="/login" element={loggedIn ?  <Navigate to={'/home'} /> : <Login/>  }/>
-          <Route path="*" element={<Navigate to={"/home"}/>} />
-          {/* <Route path='/' Component={Home}/> */}
           </Routes>
       </Router>
     </div>}

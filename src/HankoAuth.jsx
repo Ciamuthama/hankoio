@@ -21,7 +21,7 @@ const Login = () => {
       if (!localStorage.getItem("u_id")) {
           localStorage.setItem("u_id", generateUserID());
       }
-      navigate("/home");
+      navigate("/home", {replace:true});
   }, [navigate]);
   
   useEffect(() => {

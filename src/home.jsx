@@ -85,7 +85,7 @@ if('getBattery' in navigator){
             <div className="flex items-center justify-center pb-2">
               <p className="font-medium text-white font-sans text-sm text-center relative -top-16 lg:block max-sm:hidden md:hidden">Application</p>
             </div>
-            <div className="flex flex-row flex-wrap items-center justify-center mx-auto gap-4 cursor-pointer">
+            <div className="flex flex-row flex-wrap items-center justify-center mx-auto gap-4 max-sm:gap-8 cursor-pointer">
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/1Blocker.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/AndroidStudio.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="bg-[url('./assets/AppleTv.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
