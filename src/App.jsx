@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Login from "./HankoAuth";
 import Home from "./home";
@@ -14,7 +14,6 @@ function App() {
     if (localStorage.getItem("loggedIn", "true")) {
       setLoggedIn(true);
       setLoading(false)
-      Navigate('/home')
     }
   }, []);
 
@@ -22,7 +21,7 @@ function App() {
   React.useEffect(() => {
     setTimeout(() => {
         setLoading(false)
-      },[10000])
+      },[15000])
   },[])
 
 
