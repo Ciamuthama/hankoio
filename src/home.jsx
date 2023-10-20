@@ -88,7 +88,9 @@ if('getBattery' in navigator){
             <div className="flex flex-row flex-wrap items-center justify-center mx-auto gap-4 cursor-pointer">
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/1Blocker.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/AndroidStudio.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
-              <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/AppleTv.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
+              <div className="bg-[url('./assets/AppleTv.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">AppleTv</p>
+              </div>
               <div className="bg-[url('./assets/Arc.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
               </div>
@@ -120,7 +122,7 @@ if('getBattery' in navigator){
               <div className="bg-[url('./assets/FaceTime.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">FaceTime</p>
               </div>
-              <div className="lg:block md:hidden bg-[url('./assets/FanControl.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
+              <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/FanControl.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="bg-[url('./assets/GitHub.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">GitHub</p>
               </div>
