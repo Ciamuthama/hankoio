@@ -3,7 +3,7 @@ import React, {
   useState,
   useMemo,
 } from "react";
-import { Navigate,Link } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { Hanko, register } from "@teamhanko/hanko-elements";
 import Home from "./home";
 
