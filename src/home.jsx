@@ -67,7 +67,7 @@ if('getBattery' in navigator){
 
       { toggle &&
         
-       ( <div className={`flex flex-col transition-transform transform scale-100 lg:bg-neutral-900 p-1 lg:gap-4 md:gap-8 max-sm:gap-6 mx-auto lg:w-2/5 md:w-2/3 max-sm:w-auto max-sm:h-4/5 rounded`}>
+       ( <div className={`flex flex-col transition-transform transform scale-100 lg:bg-neutral-900 p-1 lg:gap-4  max-sm:gap-6 mx-auto lg:w-2/5 md:w-2/3 max-sm:w-auto max-sm:h-4/5 rounded `}>
         <div className="flex flex-row mb-3 gap-2">
           <div className="lg:flex flex-row gap-2 bg-neutral-600 w-full p-1 py-2 rounded-md md:hidden  max-sm:hidden">
             <div className={` w-4 h-4 bg-red-600 rounded-full transition-transform  transform ${ toggle ? 'scale-80': 'scale-100'} `} onClick={handleDismiss}></div>
@@ -76,85 +76,85 @@ if('getBattery' in navigator){
           </div>
         </div>
 
-        <div className="flex flex-row mx-auto items-center justify-center">
+        <div className="flex flex-row mx-auto items-center justify-center ">
           <div className="bg-neutral-800 w-3 h-full rounded-md lg:block max-sm:hidden md:hidden">
             <div className="bg-neutral-600 w-3 h-1/4 rounded-md"></div>
           </div>
 
-          <div className="flex flex-col p-2  ">
+          <div className="flex flex-col p-2 ">
             <div className="flex items-center justify-center pb-2">
               <p className="font-medium text-white font-sans text-sm text-center relative -top-16 lg:block max-sm:hidden md:hidden">Application</p>
             </div>
-            <div className="flex flex-row flex-wrap items-center justify-center mx-auto gap-4 max-sm:gap-8 cursor-pointer">
+            <div className="flex flex-row flex-wrap items-center justify-center mx-auto lg:gap-4 md:gap-8 max-sm:gap-8 cursor-pointer">
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/1Blocker.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/AndroidStudio.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
-              <div className="bg-[url('./assets/AppleTv.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/AppleTv.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14 ">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">AppleTv</p>
               </div>
-              <div className="bg-[url('./assets/Arc.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/Arc.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Arc</p>
               </div>
-              <div className="bg-[url('./assets/Alva.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/Alva.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Alva</p>
               </div>
-              <div className="bg-[url('./assets/Bloody7.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/Bloody7.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Bloody7</p>
               </div>
-              <div className="bg-[url('./assets/blyOS.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/blyOS.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">blyOS</p>
               </div>
-              <div className="bg-[url('./assets/Calculator.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/Calculator.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Calculator</p>
               </div>
-              <div className="bg-[url('./assets/Chrome.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/Chrome.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Chrome</p>
               </div>
-              <div className="bg-[url('./assets/Contacts.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/Contacts.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Contacts</p>
               </div>
-              <div className="bg-[url('./assets/Discord.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/Discord.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Discord</p>
               </div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/Docker.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
-              <div className="bg-[url('./assets/Earth.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/Earth.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Earth</p>
               </div>
-              <div className="bg-[url('./assets/FaceTime.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/FaceTime.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">FaceTime</p>
               </div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/FanControl.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
-              <div className="bg-[url('./assets/GitHub.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/GitHub.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">GitHub</p>
               </div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/Idena.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
-              <div className="bg-[url('./assets/Instagram.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/Instagram.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Instagram</p>
               </div>
-              <div className="bg-[url('./assets/Keep.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/Keep.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Keep</p>
               </div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/LanScan.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/Node.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
-              <div className="bg-[url('./assets/Phone.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="lg:hidden bg-[url('./assets/Phone.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Phone</p>
               </div>
-              <div className="bg-[url('./assets/Podcasts.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/Podcasts.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Podcast</p>
               </div>
-              <div className="bg-[url('./assets/Spotify.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/Spotify.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Spotify</p>
               </div>
-              <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/Sublime.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
+              <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/Sublime.png')] bg-center bg-contain bg-no-repeat w-16 h-16 "></div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/Steam.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/WebTorrent.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
-              <div className="bg-[url('./assets/Word.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/Word.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Word</p>
               </div>
               <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/xBox.png')] bg-center bg-contain bg-no-repeat w-16 h-16"></div>
-              <div className="bg-[url('./assets/Netflix.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/Netflix.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Netflix</p>
               </div>
-              <div className="bg-[url('./assets/YouTube.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+              <div className="bg-[url('./assets/YouTube.png')] bg-center bg-contain bg-no-repeat w-16 h-16 max-sm:w-14 max-sm:h-14">
               <p className="lg:hidden text-white text-center text-sm font-sans h-full flex items-end justify-center mt-4">Youtube</p>
               </div>
             </div>
@@ -163,21 +163,21 @@ if('getBattery' in navigator){
       </div>)}
 
       <div className="flex justify-center items-center flex-row mx-auto my-4 cursor-pointer bg-neutral-100/40 rounded-xl shadow-[0_0_10px_2px_rgba(67,67,67,0.3)] ">
-        <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/Finder.png')] bg-center bg-contain w-16 h-16"></div>
-        <div className=" bg-[url('./assets/AppStore.png')] bg-center bg-contain w-16 h-16" onClick={()=>setToggle(true)}></div>
-        <div className=" bg-[url('./assets/Message.png')] bg-center bg-contain w-16 h-16"></div>
-        <div className=" max-sm:hidden bg-[url('./assets/Telegram.png')] bg-center bg-contain w-16 h-16"></div>
-        <div className=" bg-[url('./assets/Gmail.png')] bg-center bg-contain w-16 h-16"></div>
-        <div className=" bg-[url('./assets/Safari.png')] bg-center bg-contain w-16 h-16"></div>
-        <div className=" max-sm:hidden bg-[url('./assets/Calendar.png')] bg-center bg-contain w-16 h-16"></div>
-        <div className=" bg-[url('./assets/Music.png')] bg-center bg-contain w-16 h-16"></div>
-        <div className=" bg-[url('./assets/WhatApp.png')] bg-center bg-contain w-16 h-16"></div>
-        <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/VScode.png')] bg-center bg-contain w-16 h-16"></div>
-        <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/Terminal.png')] bg-center bg-contain w-16 h-16"></div>
-        <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/JetBrains.png')] bg-center bg-contain w-16 h-16"></div>
+        <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/Finder.png')] bg-center bg-contain w-16 h-16 max-sm:w-14 max-sm:h-14"></div>
+        <div className=" bg-[url('./assets/AppStore.png')] bg-center bg-contain w-16 h-16 max-sm:w-14 max-sm:h-14" onClick={()=>setToggle(true)}></div>
+        <div className=" bg-[url('./assets/Message.png')] bg-center bg-contain w-16 h-16 max-sm:w-14 max-sm:h-14"></div>
+        <div className=" max-sm:hidden bg-[url('./assets/Telegram.png')] bg-center bg-contain w-16 h-16 max-sm:w-14 max-sm:h-14"></div>
+        <div className=" bg-[url('./assets/Gmail.png')] bg-center bg-contain w-16 h-16 max-sm:w-14 max-sm:h-14"></div>
+        <div className=" bg-[url('./assets/Safari.png')] bg-center bg-contain w-16 h-16 max-sm:w-14 max-sm:h-14"></div>
+        <div className=" max-sm:hidden bg-[url('./assets/Calendar.png')] bg-center bg-contain w-16 h-16 max-sm:w-14 max-sm:h-14"></div>
+        <div className=" bg-[url('./assets/Music.png')] bg-center bg-contain w-16 h-16 max-sm:w-14 max-sm:h-14"></div>
+        <div className=" bg-[url('./assets/WhatApp.png')] bg-center bg-contain w-16 h-16 max-sm:w-14 max-sm:h-14"></div>
+        <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/VScode.png')] bg-center bg-contain w-16 h-16 max-sm:w-14 max-sm:h-14"></div>
+        <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/Terminal.png')] bg-center bg-contain w-16 h-16 max-sm:w-14 max-sm:h-14"></div>
+        <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/JetBrains.png')] bg-center bg-contain w-16 h-16 max-sm:w-14 max-sm:h-14"></div>
         <div className="lg:block md:hidden  max-sm:hidden bg-center bg-contain w-0.5 h-12 bg-neutral-200 rounded mx-2"></div>
-        <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/Folder.png')] bg-center bg-contain w-16 h-16 "></div>
-        <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/Trash.png')] bg-center bg-contain w-16 h-16"></div>
+        <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/Folder.png')] bg-center bg-contain w-16 h-16 max-sm:w-14 max-sm:h-14"></div>
+        <div className="lg:block md:hidden  max-sm:hidden bg-[url('./assets/Trash.png')] bg-center bg-contain w-16 h-16 max-sm:w-14 max-sm:h-14"></div>
       </div>
     </div>
   );
