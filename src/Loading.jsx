@@ -5,7 +5,7 @@ export default function Loading() {
     }
   return (
     <div className='flex flex-col items-end justify-center h-full'>
-        <img src={Image.hello} alt="" />
+        <img src={Image.hello} alt="start up hello svg " />
     </div>
   )
 }

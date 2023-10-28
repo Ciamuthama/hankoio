@@ -1,33 +1,41 @@
 import React, {
   useEffect,
-  useState,
   useMemo,
 } from "react";
-import { Navigate } from "react-router-dom";
-import { Hanko, register } from "@teamhanko/hanko-elements";
+import { useNavigate } from "react-router-dom";
+import { Hanko, HankoError, register } from "@teamhanko/hanko-elements";
+import { useGlobalContext } from "./constant";
 import Home from "./home";
-
 const hankoApi = import.meta.env.VITE_BASE_URL;
 
 const Login = () => {
-  
-  const [error, setError] = useState(null);
+  const navigate = useNavigate()
+  const {url} = useGlobalContext()
   const hankoClient = useMemo(() => new Hanko(hankoApi), []);
+  const userID = () => Math.random().toString(36).substring(2, 10);
 
-  
-  const generateUserID = () => Math.random().toString(36).substring(2, 10);
+  const {active} = useGlobalContext()
 
+  const switcher=() => {
+    switch (active) {
+      case "Home":
+        return <Home />;
+      default:
+        null;
+    }
+  }
 
   const redirectAfterLogin = React.useCallback(() => {
       localStorage.setItem("loggedIn", "true");
       if (!localStorage.getItem("u_id")) {
-          localStorage.setItem("u_id", generateUserID());
+          localStorage.setItem("u_id", userID());
       }
-      <Navigate to={<Home/>} replace={true} /> 
-  }, []);
+    navigate(url);
+    // navigate(switcher)
+  }, [navigate, url]);
   
   useEffect(() => {
-    register(hankoApi).catch(setError);
+    register(hankoApi).catch(HankoError);
   }, []);
 
   useEffect(
@@ -37,8 +45,6 @@ const Login = () => {
 
     return (
       <div className=' bg-neutral-400/40'>
-        <div className='flex items-center mt-3'>
-          <a href="https://github.com/Ciamuthama/hankoio" className="rounded-md p-5 bg-blue-400 text-white font-sans text-sm no-underline ">Please visit my Github page for instruction on the login process</a></div>
         <div className="flex min-h-screen justify-center items-center mx-2">
           <hanko-auth />
       </div>
