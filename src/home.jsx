@@ -116,7 +116,7 @@ export default function Home() {
                     className="w-16 h-16"
                   />
                 </div>
-                <div className="flex ">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.AppleTv}
                     alt=""
@@ -126,7 +126,7 @@ export default function Home() {
                     AppleTv
                   </p>
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-centerx">
                   <img
                     src={Images.Arc}
                     alt=""
@@ -136,7 +136,7 @@ export default function Home() {
                     Arc
                   </p>
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.Alva}
                     alt=""
@@ -146,7 +146,7 @@ export default function Home() {
                     Alva
                   </p>
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.Bloody}
                     alt=""
@@ -156,7 +156,7 @@ export default function Home() {
                     Bloody7
                   </p>
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.blyOS}
                     alt=""
@@ -166,7 +166,7 @@ export default function Home() {
                     blyOS
                   </p>
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.Calculator}
                     alt=""
@@ -186,7 +186,7 @@ export default function Home() {
                     Chrome
                   </p>
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.Contact}
                     alt=""
@@ -196,7 +196,7 @@ export default function Home() {
                     Contacts
                   </p>
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.Discord}
                     alt=""
@@ -209,7 +209,7 @@ export default function Home() {
                 <div className="lg:block md:hidden max-sm:hidden ">
                   <img src={Images.Docker} alt="" className="w-16 h-16" />
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.Earth}
                     alt=""
@@ -219,7 +219,7 @@ export default function Home() {
                     Earth
                   </p>
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.FaceTime}
                     alt=""
@@ -232,7 +232,7 @@ export default function Home() {
                 <div className="lg:block md:hidden max-sm:hidden ">
                   <img src={Images.FanControl} alt="" className="w-16 h-16" />
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.GitHub}
                     alt=""
@@ -245,7 +245,7 @@ export default function Home() {
                 <div className="lg:block md:hidden max-sm:hidden ">
                   <img src={Images.Idena} alt="" className="w-16 h-16" />
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.Instagram}
                     alt=""
@@ -255,7 +255,7 @@ export default function Home() {
                     Instagram
                   </p>
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.Keep}
                     alt=""
@@ -271,7 +271,7 @@ export default function Home() {
                 <div className="lg:block md:hidden max-sm:hidden">
                   <img src={Images.Node} alt="" className="w-16 h-16" />
                 </div>
-                <div className="lg:hidden flex">
+                <div className="lg:hidden flex flex-col items-center">
                   <img
                     src={Images.Phone}
                     alt=""
@@ -281,7 +281,7 @@ export default function Home() {
                     Phone
                   </p>
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.Podcasts}
                     alt=""
@@ -291,7 +291,7 @@ export default function Home() {
                     Podcast
                   </p>
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.Spotify}
                     alt=""
@@ -307,10 +307,10 @@ export default function Home() {
                 <div className="lg:block md:hidden max-sm:hidden">
                   <img src={Images.Steam} alt="" className="w-16 h-16" />
                 </div>
-                <div className="lg:block md:hidden max-sm:hidden bg-[url('./assets/WebTorrent.png')] bg-center bg-contain bg-no-repeat w-16 h-16">
+                <div className="lg:block md:hidden max-sm:hidden ">
                   <img src={Images.WebTorrent} alt="" className="w-16 h-16" />
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.Word}
                     alt=""
@@ -323,7 +323,7 @@ export default function Home() {
                 <div className="lg:block md:hidden max-sm:hidden">
                   <img src={Images.XBox} alt="" className="w-16 h-16" />
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.Netflix}
                     alt=""
@@ -333,7 +333,7 @@ export default function Home() {
                     Netflix
                   </p>
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.YouTube}
                     alt=""

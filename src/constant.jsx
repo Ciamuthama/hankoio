@@ -6,7 +6,7 @@ const AppContext = React.createContext()
 // eslint-disable-next-line react/prop-types
 export const Context=({ children }) => {
     const [active, setActive] = React.useState('Home')
-    const [url, setUrl] = React.useState('/home')
+    const [url, setUrl] = React.useState('/')
 
     const apiUrl = import.meta.env.VITE_BASE_URL;
     const hanko = new Hanko(apiUrl)
