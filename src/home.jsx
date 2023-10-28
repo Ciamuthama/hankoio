@@ -176,7 +176,7 @@ export default function Home() {
                     Calculator
                   </p>
                 </div>
-                <div className="flex">
+                <div className="flex flex-col items-center">
                   <img
                     src={Images.Chrome}
                     alt=""
