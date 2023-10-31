@@ -31,8 +31,7 @@ export default function DateComponent() {
     const currentMonth = time.toLocaleDateString("en-US", formatMonth)
   return (
     <>
-      <div className="relative mx-4 lg:hidden md:flex flex-col max-sm:flex bg-[url('./assets/404.jpg')]   bg-no-repeat bg-cover bg-center rounded-2xl">
-
+      <div className="relative mx-4 lg:hidden md:hidden flex-col max-sm:flex bg-[url('./assets/404.jpg')]   bg-no-repeat bg-cover bg-center rounded-2xl
         <div>
           <h1 className="text-white/30 font-sans font-extrabold text-[100px]  leading-relaxed float-right mr-1">{currentTime}</h1>
         </div>
