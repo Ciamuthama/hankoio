@@ -26,7 +26,7 @@ export default function ModalComponent({ openModalFalse }) {
                     className=" w-20 h-20"
                   />
                 </div>
-                <div className="flex flex-col items-center max-sm:hidden" onClick={openModalFalse}>
+                <div className="flex flex-col items-center" onClick={openModalFalse}>
                   <img
                     src={Images.AppleTv}
                     alt=""
