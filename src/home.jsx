@@ -106,7 +106,9 @@ const TimeMobile = time.toLocaleTimeString('en-US', FormatMobile)
 
     
         <Popup open={isOpen}  onClose={closeModal} className="bg-neutral-400">
-          <DateComponent/>
+         <div className='w-full mx-auto' >
+           <DateComponent/>
+         </div> 
         <div
           className={"flex flex-col md:justify-between lg:bg-neutral-900 p-1 lg:gap-4  max-sm:gap-6 mx-auto lg:w-3/5 md:w-2/3 max-sm:w-auto
           max-sm:h-4/5 rounded lg:shadow-[0_0_10px_3px_rgba(67,67,67,0.4)]  "}
