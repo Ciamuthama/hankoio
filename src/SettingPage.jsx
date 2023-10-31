@@ -60,7 +60,7 @@ export default function SettingPage() {
         <div className="flex flex-col items-center gap-2 my-2">
           <div className="bg-neutral-400 rounded-full w-20 h-20 relative">
           
-              <img src={Images.man} className='w-20 h-20 rounded-full' />
+              <img src={Images.Man} className='w-20 h-20 rounded-full' />
             <img src={Images.pencil} alt="Edit your avatar" className='flex flex-row justify-center absolute bottom-1 right-1 w-3 h-3.5 border-b-2 border-black'/>
           </div>
           <div className="flex justify-center items-center mx-2">
