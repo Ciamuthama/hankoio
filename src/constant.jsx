@@ -7,7 +7,7 @@ const AppContext = React.createContext()
 export const Context=({ children }) => {
     const [active, setActive] = React.useState('Home')
     const [url, setUrl] = React.useState('/')
-    const [urlLogin, setUrlLogin] = React.useState('/')
+    const [urlLogin, setUrlLogin] = React.useState('/login')
 
     const apiUrl = import.meta.env.VITE_BASE_URL;
     const hanko = new Hanko(apiUrl)
