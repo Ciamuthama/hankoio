@@ -56,5 +56,6 @@ export const Images = {
     bg: new URL('./assets/bg.jpg', import.meta.url).href,
     pencil: new URL('./assets/pencil.svg', import.meta.url).href,
     logOut: new URL('./assets/log-out.svg', import.meta.url).href,
+    Man: new URL('./assets/man.png', import.meta.url).href,
  
 }
