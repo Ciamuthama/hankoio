@@ -15,7 +15,8 @@ export default function ModalComponent({ openModalFalse }) {
                   Application
                 </p>
               </div>
-              <div className="flex flex-row flex-wrap items-center max-sm:justify-center  mx-auto lg:gap-4 md:gap-8 max-sm:gap-8 cursor-pointer">
+              <div className="flex flex-row flex-wrap items-center max-sm:justify-center 
+                mx-auto ml-5 mr-5  lg:gap-4 md:gap-8 max-sm:gap-8 cursor-pointer">
                 <div className="lg:block md:hidden max-sm:hidden" onClick={openModalFalse}>
                   <img src={Images.Blocker} alt="" className=" w-20 h-20" />
                 </div>
