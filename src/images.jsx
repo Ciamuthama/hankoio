@@ -54,4 +54,7 @@ export const Images = {
     battery: new URL('./assets/battery.svg', import.meta.url).href,
     wifi: new URL('./assets/wifi1.svg', import.meta.url).href,
     bg: new URL('./assets/bg.jpg', import.meta.url).href,
+    pencil: new URL('./assets/pencil.svg', import.meta.url).href,
+    logOut: new URL('./assets/log-out.svg', import.meta.url).href,
+ 
 }
