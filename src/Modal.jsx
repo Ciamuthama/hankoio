@@ -11,7 +11,7 @@ export default function ModalComponent({ openModalFalse }) {
 
             <div className="flex flex-col p-2 max-sm:gap-5 max-sm:justify-between">
               <div className="flex items-center justify-center pb-2">
-                <p className="font-medium text-white font-sans text-sm text-center relative -top-16.5 lg:block max-sm:hidden md:hidden">
+                <p className="font-medium text-white font-sans text-sm text-center relative -top-20 lg:block max-sm:hidden md:hidden">
                   Application
                 </p>
               </div>
